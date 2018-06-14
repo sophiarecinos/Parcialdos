@@ -11,6 +11,5 @@ import Equipo.EquipoCerditos;
  * @author Sophi
  */
 public class Cerditos implements EquipoCerditos {
-    
-    
+       
 }
