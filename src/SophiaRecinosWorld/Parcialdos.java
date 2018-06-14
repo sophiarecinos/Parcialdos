@@ -4,7 +4,7 @@
  * and open the template in the editor.
  */
 package SophiaRecinosWorld;
-
+import Main.Menu;
 /**
  *
  * @author Sophi
@@ -16,6 +16,9 @@ public class Parcialdos {
      */
     public static void main(String[] args) {
         // TODO code application logic here
+        Menu menuprincipal = new Menu();
+        menuprincipal.MenuUno();
+        menuprincipal.MenuDos();
     }
     
 }
