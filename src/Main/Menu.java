@@ -74,9 +74,50 @@ public class Menu {
             cont++;
             
         }
+    }
+        public void MenuEdificaciones(Player p){
+        int opcion = 0;
+        Player p2 = new Player();
+        Scanner input = new Scanner(System.in);
+        while(opcion!=7){
+        System.out.println("----------Creando---------------------");
+        System.out.println("1. Crear recurso uno");
+        System.out.println("2. Crear recurso dos");
+        System.out.println("3. Crear recurso tres");
+        System.out.println("4. Crear Equipo");
+        System.out.println("5. Crear vehiculo uno");
+        System.out.println("6. Crear vehiculo dos");
+        System.out.println("7. Regresar");
+        opcion=input.nextInt();
+        switch(opcion){
+            case 1:
+                p2.guardarEdificiosRecurso(opcion, p);
+                break;
+            case 2:
+                p2.guardarEdificiosRecurso(opcion, p);
+                break;
+            case 3:
+                p2.guardarEdificiosRecurso(opcion, p);
+                break;
+            case 4:
+                p2.guardarEdificioMilicia(p);
+                break;
+            case 5:
+                p2.guardarEdificioVehiculo(opcion, p);
+                break;
+            case 6: 
+                p2.guardarEdificioVehiculo(opcion, p);
+                break;
+            case 7:
+                MenuDos();
+                break;
+        }
+        
+        }
+    }
         
        
         
     }
     
-}
+

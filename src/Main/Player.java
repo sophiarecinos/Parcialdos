@@ -43,7 +43,117 @@ public class Player {
         }
         return usuario;
     }
+    public void guardarEdificiosRecurso(int edificio, Player jugador){
+        FactoryCerditos cerdos = new FactoryCerditos();
+        FactoryEsqueletos esqueletos = new FactoryEsqueletos();
+        FactoryPrincesas princesas = new FactoryPrincesas();
+        switch(jugador.getRaza()){
+            case 1:
+                cerdos.getCerditos(edificio).crearRecursos();
+                Recursos recurso2 = cerdos.getCerditos(edificio).getInstance(); 
+                //jugador.getRecursos().add(recurso2);
+                break;
+              
+            case 2:
+                esqueletos.getEsqueletos(edificio).crearRecursos();
+                Recursos recurso = esqueletos.getEsqueletos(edificio).getInstance();
+                //jugador.getRecursos().add(recurso);
+                break;
+            case 3:
+                princesas.getPrincesas(edificio).crearRecursos();
+                Recursos recurso1 = princesas.getPrincesas(edificio).getInstance();
+               // jugador.getRecursos().add(recurso1);
+                break;
+        }
+    }
+    public void guardarEdificioCentroMando(Player jugador){
+        FactoryCerditos cerdos = new FactoryCerditos();
+        FactoryEsqueletos esqueletos = new FactoryEsqueletos();
+        FactoryPrincesas princesas = new FactoryPrincesas();
+            switch(jugador.getRaza()){
+                case 1:
+                        cerdos.getCerditos(7).crearCentroMando();
+                        CentroMando centroMando = cerdos.getCerditos(7).getInstanceB();
+                        //jugador.getCentroMando().add(centroMando);
+                        break;
+                case 2:
+                       esqueletos.getEsqueletos(7).crearCentroMando();
+                       CentroMando centroMando1 = esqueletos.getEsqueletos(7).getInstanceB();
+                       //jugador.getCentroMando().add(centroMando1);
+                       break;
+                case 3:
+                    princesas.getPrincesas(7).crearCentroMando();
+                    CentroMando centroMando2 = princesas.getPrincesas(7).getInstanceB();
+                    //jugador.getCentroMando().add(centroMando2);
+                    break;
+            }
+        }
+ public void guardarEdificioMilicia(Player jugador){
+        FactoryCerditos cerdos = new FactoryCerditos();
+        FactoryEsqueletos esqueletos = new FactoryEsqueletos();
+        FactoryPrincesas princesas = new FactoryPrincesas();
+         switch(jugador.getRaza()){
+             case 1:
+                 
+                break;
+             case 2:
+                 
+                break;
+             case 3:
+                 
+                break;
+         }
+    }
+ public void guardarEdificioVehiculo(int edificio, Player jugador){
+        FactoryCerditos cerdos = new FactoryCerditos();
+        FactoryEsqueletos esqueletos = new FactoryEsqueletos();
+        FactoryPrincesas princesas = new FactoryPrincesas();
+         switch(jugador.getRaza()){
+             case 1:
+                
+                break;
+             case 2:
+                
+                break;
+             case 3:
+               
+                break;
+         }
+    }
+    public void guardarMilicia(int tipo, Player jugador){
+        FactoryCerditos cerdos = new FactoryCerditos();
+        FactoryEsqueletos esqueletos = new FactoryEsqueletos();
+        FactoryPrincesas princesas = new FactoryPrincesas();
+         switch(jugador.getRaza()){
+             case 1:
+               
+                break;
+             case 2:
+                
+                break;
+             case 3:
+               
+                break;
+         }
+    }
+    public void guardarVehiculo(int tipo , Player jugador){
+        FactoryCerditos cerdos = new FactoryCerditos();
+        FactoryEsqueletos esqueletos = new FactoryEsqueletos();
+        FactoryPrincesas princesas = new FactoryPrincesas();
+         switch(jugador.getRaza()){
+             case 1:
+               
+                break;
+             case 2:
+         
+                break;
+             case 3:
+                 break;
+         }
+    }
 
+  
+  
     
     }
   

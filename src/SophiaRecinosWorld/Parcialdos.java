@@ -19,6 +19,7 @@ public class Parcialdos {
         Menu menuprincipal = new Menu();
         menuprincipal.MenuUno();
         menuprincipal.MenuDos();
+       
     }
     
 }

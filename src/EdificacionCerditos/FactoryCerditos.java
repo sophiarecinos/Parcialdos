@@ -26,17 +26,17 @@ public class FactoryCerditos implements RazasFactory{
     public Cerditos getCerditos(int option){
         switch(option){
             case 1:
-                return new Cultivos();
+                
             case 2:
-                return new TierraMojada();
+               
             case 3: 
-                return new TocinoMaker();
+                //return new TocinoMaker();
             case 4: 
-                return new EntrenamientoC();
+                //return new Entrenamiento();
             case 5:
-                return new LlantasMaker();
+                //return new LlantasMaker();
             case 6:
-                return new MotoTaller();
+                //return new MotoTaller();
         }
        return null;
     }
