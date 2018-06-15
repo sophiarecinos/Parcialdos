@@ -24,8 +24,21 @@ public class FactoryCerditos implements RazasFactory{
     
     @Override
     public Cerditos getCerditos(int option){
-        //dar opciones para crear edificaciones con switch y validando recursos
-        return null;
+        switch(option){
+            case 1:
+                return new Cultivos();
+            case 2:
+                return new TierraMojada();
+            case 3: 
+                return new TocinoMaker();
+            case 4: 
+                return new EntrenamientoC();
+            case 5:
+                return new LlantasMaker();
+            case 6:
+                return new MotoTaller();
+        }
+       return null;
     }
 
 }

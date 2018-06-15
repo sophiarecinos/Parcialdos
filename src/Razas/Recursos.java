@@ -10,22 +10,15 @@ package Razas;
  * @author Sophi
  */
 public class Recursos {
-    public int raza, recolectar, costo, vida;
+    public int costo, vida, monto, capacidad, tiempo;
+    public String raza;
 
-    public int getRaza() {
+    public String getRaza() {
         return raza;
     }
 
-    public void setRaza(int raza) {
+    public void setRaza(String raza) {
         this.raza = raza;
-    }
-
-    public int getRecolectar() {
-        return recolectar;
-    }
-
-    public void setRecolectar(int recolectar) {
-        this.recolectar = recolectar;
     }
 
     public int getCosto() {
@@ -42,6 +35,18 @@ public class Recursos {
 
     public void setVida(int vida) {
         this.vida = vida;
+    }
+
+    public void setMonto(int monto) {
+        this.monto=monto;
+    }
+
+    public void setCapacidad(int capacidad) {
+        this.capacidad=capacidad;
+    }
+
+    public void setTiempo(int tiempo) {
+        this.tiempo=tiempo;
     }
     
     
